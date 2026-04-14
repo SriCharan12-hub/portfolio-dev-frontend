@@ -1,0 +1,62 @@
+:root {
+  /* Color Palette */
+  --bg-dark: #020010;
+  --bg-card: rgba(10, 10, 20, 0.8);
+  --primary-neon: #00f2ff; /* Cyan */
+  --secondary-neon: #bc13fe; /* Purple */
+  --accent-neon: #ff00de; /* Pink */
+  --text-main: #f0f0f0; /* Off-white */
+  --text-muted: #88889b;
+  --glass-border: rgba(255, 255, 255, 0.05);
+  
+  /* Typography */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Gradations */
+  --grad-main: linear-gradient(135deg, var(--primary-neon), var(--secondary-neon), var(--accent-neon));
+  --grad-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none; /* We will use a custom cursor */
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grad-main);
+  border-radius: 10px;
+}

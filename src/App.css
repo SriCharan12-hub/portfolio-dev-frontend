@@ -1,0 +1,52 @@
+/* Custom App Styles */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .hidden {
+    display: none !important;
+  }
+}
+
+/* Utility Classes */
+.hidden { display: none !important; }
+.flex { display: flex !important; }
+.lg\:flex { display: none !important; }
+.flex-col { flex-direction: column !important; }
+.items-center { align-items: center !important; }
+.justify-between { justify-content: space-between !important; }
+.cursor-pointer { cursor: pointer; }
+.fixed { position: fixed !important; }
+.top-0 { top: 0 !important; }
+.left-0 { left: 0 !important; }
+.right-0 { right: 0 !important; }
+.z-1000 { z-index: 1000 !important; }
+.py-4 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.py-8 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+.px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
+.mx-4 { margin-left: 1rem !important; margin-right: 1rem !important; }
+.top-4 { top: 1rem !important; }
+.transition-all { transition-property: all !important; }
+.duration-300 { transition-duration: 300ms !important; }
+
+@media (min-width: 1024px) {
+  .lg\:flex { display: flex !important; }
+  .lg\:hidden { display: none !important; }
+  .lg\:mx-12 { margin-left: 3rem !important; margin-right: 3rem !important; }
+  .lg\:px-12 { padding-left: 3rem !important; padding-right: 3rem !important; }
+}
+
+.hover\:text-primary-neon:hover {
+  color: var(--primary-neon) !important;
+}
