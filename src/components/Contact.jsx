@@ -19,10 +19,10 @@ const Contact = () => {
     setError('');
 
     try {
-      // Use relative path for production compatibility, fallback to deployed backend for dev
+      // Use deployed backend in production, localhost for dev
       const apiUrl = process.env.NODE_ENV === 'production' 
-        ? '/api/contact' 
-        : 'https://portfolio-dev-backend-dvr0.onrender.com/api/contact';
+        ? 'https://portfolio-dev-backend-dvr0.onrender.com/api/contact' 
+        : 'http://localhost:5000/api/contact';
 
       const response = await fetch(apiUrl, {
         method: 'POST',
