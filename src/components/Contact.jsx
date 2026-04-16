@@ -20,7 +20,7 @@ const Contact = () => {
 
     try {
       // Use deployed backend in production, localhost for dev
-      const apiUrl = process.env.NODE_ENV === 'production' 
+      const apiUrl = import.meta.env.NODE_ENV === 'production' 
         ? 'https://portfolio-dev-backend-dvr0.onrender.com/api/contact' 
         : 'http://localhost:5000/api/contact';
 

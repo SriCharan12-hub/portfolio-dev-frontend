@@ -17,12 +17,22 @@ const projects = [
   {
     title: 'Trendify E-commerce',
     description: 'MERN stack ecommerce app with authentication, cart and product management functionalities.',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+    tags: ['React', 'Node.js', 'Express', 'MongoDB','Razorpay', 'JWT', 'Google OAuth'],
     demo: 'https://mern-frontend-m18p.vercel.app',
     github: 'https://github.com/SriCharan12-hub/Using-Mern',
     image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1000&auto=format&fit=crop',
     gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(20, 184, 166, 0.2))',
     primaryColor: '#10b981'
+  },
+  {
+    title: 'AI-Powered Email Automation System',
+    description: 'AI-driven n8n workflow that analyzes Gmail, automates actions like deleting spam and scheduling meetings, with centralized error handling and Slack alerts.',
+    tags: ['n8n', 'OpenAI', 'Gmail API', 'Google Calendar API', 'Slack API'],
+    demo: '',
+    github: 'https://github.com/SriCharan12-hub/Gmail-Automation',
+    image: 'https://img.freepik.com/premium-vector/ai-logo-template-vector-with-white-background_1023984-15069.jpg?w=2000',
+    gradient: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(139, 92, 246, 0.2))',
+    primaryColor: '#a855f7'
   }
 ];
 
@@ -95,7 +105,7 @@ const ProjectCard = ({ project, index }) => {
           }}
         />
 
-        <div style={{ height: '220px', overflow: 'hidden', position: 'relative' }}>
+        <div style={{ height: '300px', overflow: 'hidden', position: 'relative' }}>
           <img 
             src={project.image} 
             alt={project.title} 
