@@ -89,7 +89,7 @@ const Loader = ({ onComplete }) => {
         textTransform: 'uppercase',
         fontSize: '0.8rem'
       }}>
-        Initializing Universe
+        Loading Portfolio
       </div>
     </div>
   );
