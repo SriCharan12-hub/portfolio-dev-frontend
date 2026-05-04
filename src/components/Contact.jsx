@@ -39,6 +39,7 @@ const Contact = () => {
       }
     } catch (err) {
       setError('Connection to server failed. Please ensure the backend is running.');
+      console.error(err);
     } finally {
       setLoading(false);
     }
